@@ -75,4 +75,9 @@ public class AggregatorController {
 
         return result;
     }
+
+    @GetMapping("/getAllPalindromes")
+    public List<Entry> getAllPalindromes () {
+        return service.getAllPalindromes();
+    }
 }
